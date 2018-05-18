@@ -10,15 +10,18 @@ class CalculadoraTest {
 
 	@Test
 	void testCalculadora() {
-		Calculadora valores = new Calculadora(10, 10);
+		Calculadora valores = new Calculadora(10d, 10d);
 
-		assertEquals(0, valores.subtrair().intValue());
-		assertEquals(20, valores.somar().intValue());
-		assertEquals(100, valores.multiplicar().intValue());
-		assertEquals(1, valores.dividir().intValue());
+		assertTrue(0 == valores.subtrair());
+		assertTrue(20 == valores.somar());
+		assertTrue(100 == valores.multiplicar());
+		assertTrue(1 == valores.dividir());
 
+		
+		assertEquals(0d,valores.subtrair().doubleValue());
+		assertEquals(20d, valores.somar().doubleValue());
+		assertEquals(100d, valores.multiplicar().doubleValue());
+		assertEquals(1d	, valores.dividir().doubleValue());
 	}
 
-	
-	
 }

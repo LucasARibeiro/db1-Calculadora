@@ -2,46 +2,46 @@ package br.com.db1.start.calculadora;
 
 public class Calculadora {
 
-	private Integer valor1;
-	private Integer valor2;
+	private Double valor1;
+	private Double valor2;
 
 	public Calculadora() {
 	}
 
-	public Calculadora(Integer valor1, Integer valor2) {
+	public Calculadora(Double valor1, Double valor2) {
 		this.valor1 = valor1;
 		this.valor2 = valor2;
 	}
 
-	public Integer getValor1() {
+	public Double getValor1() {
 		return valor1;
 	}
 
-	public void setValor1(Integer valor1) {
+	public void setValor1(Double valor1) {
 		this.valor1 = valor1;
 	}
 
-	public Integer getValor2() {
+	public Double getValor2() {
 		return valor2;
 	}
 
-	public void setValor2(Integer valor2) {
+	public void setValor2(Double valor2) {
 		this.valor2 = valor2;
 	}
 
-	public Integer somar() {
+	public Double somar() {
 		return valor1 + valor2;
 	}
 
-	public Integer dividir() {
+	public Double dividir() {
 		return valor1 / valor2;
 	}
 
-	public Integer subtrair() {
+	public Double subtrair() {
 		return valor1 - valor2;
 	}
 
-	public Integer multiplicar() {
+	public Double multiplicar() {
 		return valor1 * valor2;
 	}
 }
